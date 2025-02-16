@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+.title {
+	@apply text-green-700 font-extrabold font-sans text-3xl;
+}
+
+.currency-input {
+	@apply flex justify-center;
+}
