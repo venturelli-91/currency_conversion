@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Input from "./components/Input";
+import { Button, Card, Flowbite, TextInput, Select } from "flowbite-react";
 import { TbZoomMoney } from "react-icons/tb";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 import { IoIosRefresh } from "react-icons/io";
@@ -50,59 +50,112 @@ const App = () => {
 	};
 
 	return (
-		<div className="conversion-container">
-			<>
-				<div className="input-container">
-					<TbZoomMoney size={25} />
-					<Input
-						label="Valor:"
-						amount={amount}
-						onChangeAmount={(amount) => setAmount(amount)}
-						currency={currency}
-						onCurrencyChange={setCurrency}
-						currencies={currencies}
-					/>
-				</div>
+		<Flowbite>
+			<div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 sm:p-6 lg:p-8">
+				<div className="max-w-4xl mx-auto">
+					<h1 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+						Conversor de Moedas
+					</h1>
 
-				<div className="goal-currency-container">
-					<FaMoneyBillTransfer size={25} />
-					<Input
-						label="Moeda Desejada:"
-						amount={converted ?? 0}
-						onChangeAmount={() => {}}
-						currency={goalCurrency}
-						onCurrencyChange={setGoalCurrency}
-						currencies={currencies}
-					/>
-				</div>
+					<Card className="p-4">
+						<div className="space-y-12">
+							<div className="flex items-center gap-6">
+								<TbZoomMoney className="text-3xl text-blue-600 dark:text-blue-500" />
+								<div className="flex-1 space-y-4">
+									<label className="block text-base font-bold text-gray-700 dark:text-gray-300 mb-2">
+										Valor:
+									</label>
+									<div className="flex gap-4">
+										<TextInput
+											type="number"
+											value={amount}
+											onChange={(e) => setAmount(Number(e.target.value))}
+											placeholder="Digite o valor"
+											className="flex-1"
+											sizing="lg"
+										/>
+										<Select
+											value={currency}
+											onChange={(e) =>
+												setCurrency(e.target.value as typeof currency)
+											}
+											sizing="lg">
+											{currencies.map((c) => (
+												<option
+													key={c}
+													value={c}>
+													{c}
+												</option>
+											))}
+										</Select>
+									</div>
+								</div>
+							</div>
 
-				<div className="button-container">
-					<button
-						onClick={searchConversion}
-						className="button">
-						Convert
-					</button>
+							<div className="flex items-center gap-6">
+								<FaMoneyBillTransfer className="text-3xl text-green-600 dark:text-green-500" />
+								<div className="flex-1 space-y-4">
+									<label className="block text-base font-bold text-gray-700 dark:text-gray-300 mb-2 mt-4">
+										Moeda Desejada:
+									</label>
+									<div className="flex gap-4">
+										<TextInput
+											type="number"
+											value={converted ?? 0}
+											readOnly
+											className="flex-1"
+											sizing="lg"
+										/>
+										<Select
+											value={goalCurrency}
+											onChange={(e) =>
+												setGoalCurrency(e.target.value as typeof goalCurrency)
+											}
+											sizing="lg">
+											{currencies.map((c) => (
+												<option
+													key={c}
+													value={c}>
+													{c}
+												</option>
+											))}
+										</Select>
+									</div>
+								</div>
+							</div>
 
-					<button
-						onClick={reset}
-						className="reset-button">
-						Reset
-						<IoIosRefresh
-							size={25}
-							className="icon"
-						/>
-					</button>
-				</div>
+							<div className="flex justify-center gap-8 pt-8 mt-4">
+								<div>
+									<Button
+										gradientDuoTone="greenToBlue"
+										onClick={searchConversion}
+										size="lg">
+										Converter
+									</Button>
+								</div>
+								<div>
+									<Button
+										gradientDuoTone="purpleToBlue"
+										onClick={reset}
+										size="lg">
+										<IoIosRefresh className="mr-2 h-6 w-6" />
+										Resetar
+									</Button>
+								</div>
+							</div>
 
-				<div className="result-container">
-					{converted !== null && (
-						<p className="converted-value">
-							{amount} {currency} = {converted.toFixed(2)} {goalCurrency}
-						</p>
-					)}
+							{converted !== null && (
+								<div className="mt-6 p-6 bg-blue-50 dark:bg-blue-900 rounded-lg">
+									<p className="text-center text-xl font-semibold text-blue-700 dark:text-blue-300">
+										{amount} {currency} = {converted.toFixed(2)} {goalCurrency}
+									</p>
+								</div>
+							)}
+						</div>
+					</Card>
 				</div>
-			</>
-		</div>
+			</div>
+		</Flowbite>
 	);
 };
 

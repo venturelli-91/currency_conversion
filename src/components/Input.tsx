@@ -1,3 +1,4 @@
+import { FC } from "react";
 import React from "react";
 
 type CurrencyValid = "USD" | "EUR" | "JPY" | "CAD" | "INR" | "BRL" | "AUD";
@@ -10,8 +11,7 @@ interface MoneyAmountProps {
 	onCurrencyChange: (value: CurrencyValid) => void;
 	currencies: readonly CurrencyValid[];
 }
-
-const Input: React.FC<MoneyAmountProps> = ({
+const Input: FC<MoneyAmountProps> = ({
 	label,
 	amount,
 	onChangeAmount,
