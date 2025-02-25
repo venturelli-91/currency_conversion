@@ -12,7 +12,9 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Space Grotesk", "sans-serif"],
+				display: ["Orbitron", "sans-serif"],
+				body: ["Chakra Petch", "sans-serif"],
+				mono: ["Share Tech Mono", "monospace"],
 			},
 			colors: {
 				background: "var(--background)",

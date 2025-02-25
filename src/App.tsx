@@ -51,18 +51,20 @@ const App = () => {
 
 	return (
 		<Flowbite>
-			<div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 sm:p-6 lg:p-8">
+			<div className="min-h-screen bg-white dark:bg-gray-900 p-4 sm:p-6 lg:p-8">
 				<div className="max-w-4xl mx-auto">
-					<h1 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-6">
+					<h1
+						className="font-bold text-cyan-400 text-center mb-6"
+						style={{ fontSize: "2.5rem" }}>
 						Conversor de Moedas
 					</h1>
 
-					<Card className="p-4">
+					<Card className="bg-white dark:bg-gray-800">
 						<div className="space-y-12">
 							<div className="flex items-center gap-6">
-								<TbZoomMoney className="text-3xl text-blue-600 dark:text-blue-500" />
+								<TbZoomMoney className="text-3xl text-cyan-400" />
 								<div className="flex-1 space-y-4">
-									<label className="block text-base font-bold text-gray-700 dark:text-gray-300 mb-2">
+									<label className="block text-base font-bold text-cyan-400 mb-2">
 										Valor:
 									</label>
 									<div className="flex gap-4">
@@ -93,9 +95,9 @@ const App = () => {
 							</div>
 
 							<div className="flex items-center gap-6">
-								<FaMoneyBillTransfer className="text-3xl text-green-600 dark:text-green-500" />
+								<FaMoneyBillTransfer className="text-3xl text-cyan-400" />
 								<div className="flex-1 space-y-4">
-									<label className="block text-base font-bold text-gray-700 dark:text-gray-300 mb-2 mt-4">
+									<label className="block text-base font-bold text-cyan-400 mb-2 mt-4">
 										Moeda Desejada:
 									</label>
 									<div className="flex gap-4">
@@ -127,7 +129,7 @@ const App = () => {
 							<div className="flex justify-center gap-8 pt-8 mt-4">
 								<div>
 									<Button
-										gradientDuoTone="greenToBlue"
+										gradientDuoTone="purpleToBlue"
 										onClick={searchConversion}
 										size="lg">
 										Converter
@@ -135,7 +137,7 @@ const App = () => {
 								</div>
 								<div>
 									<Button
-										gradientDuoTone="purpleToBlue"
+										gradientDuoTone="cyanToBlue"
 										onClick={reset}
 										size="lg">
 										<IoIosRefresh className="mr-2 h-6 w-6" />
@@ -145,8 +147,8 @@ const App = () => {
 							</div>
 
 							{converted !== null && (
-								<div className="mt-6 p-6 bg-blue-50 dark:bg-blue-900 rounded-lg">
-									<p className="text-center text-xl font-semibold text-blue-700 dark:text-blue-300">
+								<div className="mt-6 p-6 bg-gray-100 dark:bg-gray-900 rounded-lg">
+									<p className="text-center text-xl font-semibold text-cyan-400">
 										{amount} {currency} = {converted.toFixed(2)} {goalCurrency}
 									</p>
 								</div>
