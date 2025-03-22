@@ -1,40 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Currency Conversion App 💱
 
-## Getting Started
+[![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://currency-conversion-app.vercel.app/)
+[![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Flowbite](https://img.shields.io/badge/Flowbite-3E7BFA?style=for-the-badge&logo=flowbite&logoColor=white)](https://flowbite.com/)
+[![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 
-First, run the development server:
+## 📝 Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A modern and intuitive **Currency Conversion** application that allows users to easily convert between different currencies using real-time exchange rates. Built with a modern tech stack including **React**, **TypeScript**, **Node.js**, **TailwindCSS**, and **Flowbite**, this application offers a seamless user experience with its responsive design and efficient performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Whether you're planning international travel, managing cross-border business, or simply curious about exchange rates, this tool provides accurate and up-to-date currency conversions with just a few clicks.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## ✨ Preview
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<img src="https://github.com/venturelli-91/currency_conversion/raw/main/currency_conversion.png" alt="Currency Conversion App Preview" width="600"/>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 📌 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Real-time Currency Conversion**: Converts between multiple currencies using live exchange rates.
+- **Responsive Design**: Optimized for both mobile and desktop devices using TailwindCSS.
+- **TypeScript Support**: Provides type safety to ensure a robust and maintainable codebase.
+- **Currency Selection**: Easily select currencies for conversion.
 
-## Learn More
+## 🚀 Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+<div style="display: inline-flex; gap: 10px; align-items: center;">
+  <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="30" height="30"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" width="30" height="30"/>
+  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="TailwindCSS" width="40" height="40"/>
+  <img src="https://flowbite.s3.amazonaws.com/brand/logo-dark/mark/flowbite-logo.svg" alt="Flowbite" width="30" height="30"/>
+</div>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 🚢 Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<a href="https://currency-conversion-app.vercel.app/" target="_blank">
+  <img src="https://logowik.com/content/uploads/images/vercel1868.jpg" alt="Vercel" width="40" height="40" style="border-radius: 50%; background-color: white;"/>
+</a>
 
-## Deploy on Vercel
+Access the application directly: [Currency Conversion App](https://currency-conversion-gamma.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏃‍♂️ How to Run the Project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/venturelli-91/currency_conversion.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd currency_conversion
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Access the app at http://localhost:3000.
+
+## 🌟 Additional Features
+
+- **Currency Data API**: Fetches up-to-date exchange rates from a reliable API.
+
+- **Error Handling**: Handles invalid inputs and API errors gracefully.
+
+- **Responsive Design**: Automatically adjusts to screen size for seamless user experience.
+
+- **Clear UI**: Easy-to-use interface for selecting currencies and entering conversion amounts.
+
+## 📊 Project Status
+
+![Status](https://img.shields.io/badge/Status-In%20Development-brightgreen)
+
+## 👨‍💻 Contributing
+
+Feel free to fork this repository and contribute =D.
+
+## 📬 Contact
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aurelioventurelli)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/venturelli-91)
+
+---
+
+Developed by Aurélio Venturelli
+
