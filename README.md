@@ -1,4 +1,4 @@
-# Currency Conversion App 💱
+# Aplicativo de Conversão de Moedas 💱
 
 [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://currency-conversion-app.vercel.app/)
 [![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
@@ -8,24 +8,24 @@
 [![Flowbite](https://img.shields.io/badge/Flowbite-3E7BFA?style=for-the-badge&logo=flowbite&logoColor=white)](https://flowbite.com/)
 [![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 
-## 📝 Description
+## 📝 Descrição
 
-A modern and intuitive **Currency Conversion** application that allows users to easily convert between different currencies using real-time exchange rates. Built with a modern tech stack including **React**, **TypeScript**, **Node.js**, **TailwindCSS**, and **Flowbite**, this application offers a seamless user experience with its responsive design and efficient performance.
+Um aplicativo de **Conversão de Moedas** moderno e intuitivo que permite aos usuários converter facilmente entre diferentes moedas usando taxas de câmbio em tempo real. Construído com um stack tecnológico moderno incluindo **React**, **TypeScript**, **Node.js**, **TailwindCSS** e **Flowbite**, este aplicativo oferece uma experiência de usuário perfeita com seu design responsivo e desempenho eficiente.
 
-Whether you're planning international travel, managing cross-border business, or simply curious about exchange rates, this tool provides accurate and up-to-date currency conversions with just a few clicks.
+Seja você esteja planejando viagens internacionais, gerenciando negócios transfronteiriços ou simplesmente curioso sobre taxas de câmbio, esta ferramenta fornece conversões de moeda precisas e atualizadas com apenas alguns cliques.
 
-## ✨ Preview
+## ✨ Prévia
 
-<img src="https://github.com/venturelli-91/currency_conversion/raw/main/currency_conversion.png" alt="Currency Conversion App Preview" width="600"/>
+<img src="https://github.com/venturelli-91/currency_conversion/raw/main/currency_conversion.png" alt="Prévia do Aplicativo de Conversão de Moedas" width="600"/>
 
-## 📌 Features
+## 📌 Funcionalidades
 
-- **Real-time Currency Conversion**: Converts between multiple currencies using live exchange rates.
-- **Responsive Design**: Optimized for both mobile and desktop devices using TailwindCSS.
-- **TypeScript Support**: Provides type safety to ensure a robust and maintainable codebase.
-- **Currency Selection**: Easily select currencies for conversion.
+- **Conversão de Moedas em Tempo Real**: Converte entre múltiplas moedas usando taxas de câmbio atualizadas.
+- **Design Responsivo**: Otimizado para dispositivos móveis e desktop usando TailwindCSS.
+- **Suporte a TypeScript**: Fornece segurança de tipos para garantir um código robusto e de fácil manutenção.
+- **Seleção de Moedas**: Selecione facilmente as moedas para conversão.
 
-## 🚀 Technologies Used
+## 🚀 Tecnologias Utilizadas
 
 <div style="display: inline-flex; gap: 10px; align-items: center;">
   <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="30" height="30"/>
@@ -36,66 +36,67 @@ Whether you're planning international travel, managing cross-border business, or
   <img src="https://flowbite.s3.amazonaws.com/brand/logo-dark/mark/flowbite-logo.svg" alt="Flowbite" width="30" height="30"/>
 </div>
 
-## 🚢 Deploy
+## 🚢 Implantação
 
 <a href="https://currency-conversion-app.vercel.app/" target="_blank">
   <img src="https://logowik.com/content/uploads/images/vercel1868.jpg" alt="Vercel" width="40" height="40" style="border-radius: 50%; background-color: white;"/>
 </a>
 
-Access the application directly: [Currency Conversion App](https://currency-conversion-gamma.vercel.app/)
+Acesse a aplicação diretamente: [Aplicativo de Conversão de Moedas](https://currency-conversion-gamma.vercel.app/)
 
-## 🏃‍♂️ How to Run the Project
+## 🏃‍♂️ Como Executar o Projeto
 
-1. Clone this repository:
+1. Clone este repositório:
 
    ```bash
    git clone https://github.com/venturelli-91/currency_conversion.git
    ```
 
-2. Navigate to the project directory:
+2. Navegue até o diretório do projeto:
 
    ```bash
    cd currency_conversion
    ```
 
-3. Install dependencies:
+3. Instale as dependências:
 
    ```bash
    npm install
    ```
 
-4. Start the development server:
+4. Inicie o servidor de desenvolvimento:
 
    ```bash
    npm run dev
    ```
 
-5. Access the app at http://localhost:3000.
+5. Acesse o aplicativo em http://localhost:3000.
 
-## 🌟 Additional Features
+## 🌟 Funcionalidades Adicionais
 
-- **Currency Data API**: Fetches up-to-date exchange rates from a reliable API.
+- **API de Dados de Moedas**: Busca taxas de câmbio atualizadas de uma API confiável.
 
-- **Error Handling**: Handles invalid inputs and API errors gracefully.
+- **Tratamento de Erros**: Lida com entradas inválidas e erros de API de forma elegante.
 
-- **Responsive Design**: Automatically adjusts to screen size for seamless user experience.
+- **Design Responsivo**: Ajusta-se automaticamente ao tamanho da tela para uma experiência de usuário contínua.
 
-- **Clear UI**: Easy-to-use interface for selecting currencies and entering conversion amounts.
+- **Interface Clara**: Interface fácil de usar para selecionar moedas e inserir valores de conversão.
 
-## 📊 Project Status
+## 📊 Status do Projeto
 
-![Status](https://img.shields.io/badge/Status-In%20Development-brightgreen)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-brightgreen)
 
-## 👨‍💻 Contributing
+## 👨‍💻 Contribuições
 
-Feel free to fork this repository and contribute =D.
+Sinta-se à vontade para fazer fork deste repositório e contribuir =D.
 
-## 📬 Contact
+## 📬 Contato
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aurelioventurelli)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/venturelli-91)
 
 ---
 
-Developed by Aurélio Venturelli
+Desenvolvido por Aurélio Venturelli
+
 
